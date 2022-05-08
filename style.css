@@ -6,7 +6,7 @@ body {
 
 canvas {
     background-color: red;
-    margin-top: 185px;
+    margin-top: 255px;
     border: 5px groove skyblue;
     border-radius: 25px;
 }
