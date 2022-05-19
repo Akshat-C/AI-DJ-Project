@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
 	<title>AI DJ WEB APP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -21,22 +21,22 @@
   	
 <h1 class="btn btn-info" style="font-size:32px;">AI DJ Web Application</h1><br>
 <h5 class="bg-info" style="padding:7px; font-size:14px; width: fit-content; color:orangered;">This app can play a specific song by detecting which wrist in front of the camera</h5>
-<h4 class="btn btn-success" style="font-size: 18px;">Keep right wrist in front of camera to play Harry Potter theme song. Keep left wrist in front of camera to play Peter Pan song</h4>
+<h4 class="btn btn-success" style="font-size: 18px;">First set speed and volume. Then press play. Keep right wrist in front of camera to change to Harry Potter theme song. Keep left wrist in front of camera to change to Peter Pan song</h4>
 <br><br>
 <button class="btn btn-danger" style="font-size: 16px;" onclick="play1()">Play</button>
 <br><br>
 <button class="btn btn-warning" style="font-size: 22px;">Song Name: <span id="song_name"></span></button><br>
 <div style="float: left; padding: 20px; margin:10px; width:383px;">
 <center>
-<input type="number" placeholder="Type a number from 0-100 to change the speed" class="form-control">
-<br><button class="btn btn-primary">Change Speed</button><br>
-<h3 class="btn btn-danger" style="font-size:20px;">Speed: <span id="speed"></span></h3>
+<input type="number" placeholder="Type 0.5, 1, 1.5, 2, 2.5 to change speed" class="form-control" id="speed">
+<br><button class="btn btn-primary" onclick="change_speed()">Change Speed</button><br>
+<h3 class="btn btn-danger" style="font-size:20px;">Speed: <span id="spe"></span></h3>
 </center>
 </div>
 <div style="float: right; padding: 20px; margin:10px; width:383px;">
 <center>
-<input type="number" placeholder="Type a number from 0-100 to change the volume" class="form-control">
-<br><button class="btn btn-primary">Change Speed</button><br>
+<input type="number" placeholder="Type 0.1, 0.3, 0.5, 0.7, 0.9 to change volume" class="form-control" id="vol">
+<br><button class="btn btn-primary" onclick="change_volume()">Change Volume</button><br>
 <h3 class="btn btn-danger" style="font-size:20px;">Volume: <span id="volume"></span></h3>
 </center>
 </div>
